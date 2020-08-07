@@ -103,6 +103,91 @@ svm_parameter_selection()
 # Output : 
 # =============================================================================
 
+
+###########  MODEL PARAMETERS  #############
+
+
+
+*****************SVC with kernel as linear,gamma as 0.1 and C as 0.1**********************
+SVC(C=0.1, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma=0.1, kernel='linear',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+
+
+
+###########  MODEL EVALUATION  #############
+
+************Classification Report****************
+              precision    recall  f1-score   support
+
+           0       0.88      0.97      0.92        63
+           1       0.98      0.93      0.95       108
+
+    accuracy                           0.94       171
+   macro avg       0.93      0.95      0.94       171
+weighted avg       0.94      0.94      0.94       171
+
+
+
+
+###########  MODEL PARAMETERS  #############
+
+
+
+*****************SVC with kernel as rbf,gamma as 0.1 and C as 0.1**********************
+SVC(C=0.1, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma=0.1, kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+
+
+
+###########  MODEL EVALUATION  #############
+
+************Classification Report****************
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        63
+           1       0.63      1.00      0.77       108
+
+    accuracy                           0.63       171
+   macro avg       0.32      0.50      0.39       171
+weighted avg       0.40      0.63      0.49       171
+
+
+
+
+###########  MODEL PARAMETERS  #############
+
+
+
+*****************SVC with kernel as sigmoid,gamma as 0.1 and C as 0.1**********************
+SVC(C=0.1, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma=0.1, kernel='sigmoid',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+
+
+
+###########  MODEL EVALUATION  #############
+
+************Classification Report****************
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        63
+           1       0.63      1.00      0.77       108
+
+    accuracy                           0.63       171
+   macro avg       0.32      0.50      0.39       171
+weighted avg       0.40      0.63      0.49       171
+
+
+
+
+########################## Using GridSearchCV   ###############################
+
+
 *********Displaying the best parameters after tuning*********
 
 {'C': 0.1, 'gamma': 0.1, 'kernel': 'linear'}
