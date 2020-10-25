@@ -5,7 +5,7 @@
 ##### 3. Bag Of Words using Tfidf-Vectorizer
 ##### 4. Voting Classifier 
 
-******* Output of the code ********
+*******##### Output of the code********
 ``` 
 ******** Accuracies of various classifiers ********
 LogisticRegression
