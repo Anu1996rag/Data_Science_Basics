@@ -4,7 +4,7 @@
 ##### 2. Handling JSON files
 ##### 3. Bag Of Words using Tfidf-Vectorizer
 ##### 4. Voting Classifier 
-##### 5. Using API key in the code. 
+
 
 ***Output of the code***
 ``` 
